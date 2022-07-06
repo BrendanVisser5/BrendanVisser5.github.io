@@ -1,0 +1,100 @@
+body {
+    background-color:rgb(245, 240, 187);
+    margin: 0cm;
+}
+
+body hr {
+border-bottom: 0pc;
+border: solid;
+max-width: 5%;
+}
+
+.topnav {
+background-color: #73a9ad;
+text-align: center;
+max-height: 20%;
+}
+
+.topnav img {
+float: left;
+max-width: 3%;
+margin: 0;
+}
+
+.topnav a {
+overflow: hidden;
+background-color:rgb(115, 169, 173);
+font-family: 'Nunito', sans-serif;
+display: inline;
+margin: 3%;
+font-size: 22px;
+color: black;
+text-decoration-line: none;
+}
+
+.topnav a:hover {
+color: rgb(245, 240, 187);
+}
+
+body h1 {
+font-family: 'Shadows Into Light', cursive;
+text-align: center;
+}
+
+body p {
+font-family: 'Nunito', sans-serif;
+}
+
+.About {
+display: flex;
+margin: 2%;
+max-height: 90%;
+place-items: center;
+}
+
+.About img {
+max-width: 4%;
+padding: 1px;
+margin: 4%;
+}
+
+.About .socials {
+    position: relative;
+    overflow: hidden;
+    place-content: baseline center;
+}
+
+.About span {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.Portfolio {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+column-gap: 2%;
+margin: 2%;
+}
+.Portfolio span {
+font-family: 'Nunito', sans-serif;
+font-weight: bold;
+font-size: 40px;
+}
+
+.Portfolio .panel{
+background: rgba(255, 255, 255, 0.59);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.9px);
+-webkit-backdrop-filter: blur(4.9px);
+border: 1px solid rgba(255, 255, 255, 0.37);
+text-align: center;
+}
+
+.Portfolio .panel:hover {
+    border: 1px solid rgba(255, 255, 255, 0.89);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.336);
+}
+
