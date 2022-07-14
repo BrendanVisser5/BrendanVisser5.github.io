@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = utf-8> <!-- encoding of website -->
+        <title> Nemo The Nebelung </title>
+        <link rel="icon" type="image/x-icon" href="NemoVector.png">
+        <link rel="stylesheet" href= "styles.css">
+        <link rel="icons" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        
+        <div class = "topnav" id = "holo">
+            <img id="logo" src= "NemoVector.png">
+            <a class= "active" href=#Home>Home</a>
+            <a href=#Blog>Blog</a>
+            <a href="#About Me">About Me</a>
+            <a href="#Portfolio">Portfolio</a>
+            <button type ="button" onclick="darkMode()"><img src = "https://svgshare.com/i/fpB.svg" height = "25" width="25"/></button>
+            <button type = "button" onclick="lightMode()"><img src = "https://svgshare.com/i/foK.svg" height = "25" width="25"/></button>
+                    <script>
+                       function darkMode() {
+                        var element = document.body;
+                        var content = document.getElementById("DarkModetext");
+                        element.className = "dark-mode";
+                        content.innerText = "Dark Mode is ON";}
+                        
+                        function lightMode() {
+                        var element = document.body;
+                        var content = document.getElementById("DarkModetext");
+                        element.className = "light-mode";
+                        content.innerText = "Dark Mode is OFF";}
+                  </script>
+        </div>
+    </head>
+    <body>
+        <div class="About">
+            <svg height = "400" width = "400" id = "holo">
+                <path fill = "none"
+                d = "M 0, 200
+                a 200,200 0 1,1 400,0
+                a 200,200 0 1,1 -400,0" />              
+                <image href = "NemoVector.png"/>
+            </svg>
+            <p><span> Hello! My name is Nemo, aka Devcat. </span><br> I am an internet persona based on my dad's beloved cat, and (hopefully) your Web-Developer!
+            Don't worry, my dad does most of the coding. I'm just the face of the business <span style="font-size:15px;"><strong> licks paws. </strong></span><br> 
+                <img src = "github-svgrepo-com (1).svg" class="socials">
+                <img src = "instagram-svgrepo-com.svg" class="socials">
+                <img src = "twitter-svgrepo-com (1).svg" class="socials">
+                <a href="#" class="fa fa-facebook"></a><br>
+                <span> Listen to some of my favourite music while you are here </span><br> 
+                <iframe
+                    width="40%"
+                    height="40%"
+                    src="https://www.youtube.com/embed/f02mOEt11OQ">
+                </iframe>
+            </p>
+        </div>
+        <div class="Portfolio">
+        <h1> My Services </h1>
+            <div class = "panel">
+                <span> Portfolio Websites </span>
+            </div>
+            <div class = "panel">
+                <span> CV Websites </span>
+            </div>
+            <div class = "panel">
+                <span> Niche Websites </span>
+            </div>
+            <div class = "panel">
+                <span> Web-Apps (Coming soon!) </span></div>
+            <div class = "panel">
+                <span> Web3 (Coming soon!) </span> </div>
+            <div class = "panel">
+                <span> E-Commerce (Coming soon!) </span>
+            </div>
+        </div>
+        <h1> My Portfolio </h1>
+        <h1> Get In Touch
+        </h1>
+    </body>
+</html>
