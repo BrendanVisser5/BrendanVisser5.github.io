@@ -142,16 +142,12 @@ body p {
     height: 100vh;
 }
 
-.About img {
+#Nemo {
     max-width: 40%;
     padding: 1px;
     margin: 4%;
     background-image: linear-gradient(to right, rgb(123, 255, 109),rgb(252, 255, 235));
     border-radius: 50%;
-}
-
-.About .socials {
-    overflow: hidden;
 }
 
 .About span {
@@ -164,13 +160,6 @@ body p {
     margin: 4%;
     margin-top: 5%;
     max-width: 50%;
-}
-
-svg {
-    margin: 4%;
-    overflow:visible;
-    background-image: linear-gradient(to right, rgb(123, 255, 109),rgb(252, 255, 235));
-    border-radius: 50%;
 }
 
 .Portfolio {
@@ -212,4 +201,23 @@ font-size: 50px;
     max-width: 40%;
     padding: 1px;
     margin: 4%;
+}
+
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+svg {
+    display: none;
+}
+
+.socials img{
+    border-radius: 50%;
+    width: 50px;
+    position:absolute;
+}
+
+.socials path {
+    display: none;
 }
