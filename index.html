@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset = utf-8> <!-- encoding of website -->
-        <title> Nemo The Nebelung </title>
+        <title> Devcat Studios</title>
         <link rel="icon" type="image/x-icon" href="NemoVector.png">
         <link rel="stylesheet" href= "styles.css">
         <link rel="icons" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,11 +13,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
         
-        <div class = "topnav" id = "holo">
+        <div class = "topnav">
             <img id="logo" src= "NemoVector.png">
             <a class= "active" href=#Home>Home</a>
             <a href=#Blog>Blog</a>
-            <a href="#About Me">About Me</a>
+            <a id = "unique" href="#About Me">About Me</a>
+                <div class = "dropdown">
+                    <a href = "#1">About My Dad</a>
+                </div>
             <a href="#Portfolio">Portfolio</a>
             <button type ="button" onclick="darkMode()"><img src = "https://svgshare.com/i/fpB.svg" height = "25" width="25"/></button>
             <button type = "button" onclick="lightMode()"><img src = "https://svgshare.com/i/foK.svg" height = "25" width="25"/></button>
@@ -36,31 +39,16 @@
                   </script>
         </div>
     </head>
+    <button type = "button" onclick ="newContent()"> New Content </button>
     <body>
-
-        <div class = "container">
-            <div class = "logo one">
-              <img src = "https://www.svgrepo.com/show/35001/github.svg"></div>
-            <div class = "logo two">
-              <img src = "https://www.svgrepo.com/show/354885/codepen.svg"></div>
-            <div class = "logo three">
-              <img src = "https://www.svgrepo.com/show/271162/linkedin.svg"></div>
-            <div class = "logo four">
-              <img src = "https://www.svgrepo.com/show/130096/twitter.svg"></div>
-            <div class = "logo five">
-              <img src = "https://www.svgrepo.com/show/134478/instagram.svg"></div>
-        </div>
-        <div class="About">
-            <svg height = "400" width = "400" id = "holo">
-                <path fill = "none"
-                d = "M 120, 400
-                a 200,200 0 1,1 400,0
-                a 200,200 0 1, 1-400,0" />              
-                <image href = "NemoVector.png"/>
-            </svg>
-            <p><span> Hello! My name is Nemo, aka Devcat. </span><br> I am an internet persona based on my dad's beloved cat, and (hopefully) your Web-Developer!
-            Don't worry, my dad does most of the coding. I'm just the face of the business <span style="font-size:15px;"><strong> licks paws. </strong></span><br> 
-            </p>
+        <div class="About" id = "Nemo">             
+                <img src = "NemoVector.png"/>
+                <p><span style="font-size: 60px;"> Hello! My name is Nemo, aka Devcat. </span><br> I am an internet persona based on my dad's beloved cat, and (hopefully) your Web-Developer!
+                Don't worry, my dad does most of the coding. I'm just the face of the business 
+                <span style="font-size:15px; font-family:'Shadows Into Light', cursive;"><strong> licks paws. </strong></span><br> <br></p></div>
+        <div class="About" id = "Brendan"> 
+            <img src = "Brendan.jfif" style="border-radius:50%;"/>          
+            <p><span style="font-size: 60px;"> Hello! My name is Brendan. </span><br>     
         </div>
         <div class="Portfolio">
         <h1> My Services </h1>
@@ -82,9 +70,6 @@
             </div>
         </div>
         <h1> My Portfolio </h1>
-        <h1> Get In Touch
-        </h1>
+        <h1> Get In Touch </h1>
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-    <script src= "anime.js"></script>
 </html>

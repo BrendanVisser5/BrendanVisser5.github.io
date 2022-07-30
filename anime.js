@@ -1,6 +1,6 @@
 var path = anime.path('path');
 
-let AnimateLogo1 = anime({
+anime({
   targets: '.logo.one',
   translateX: path('x'),
   translateY: path('y'),
@@ -9,7 +9,7 @@ let AnimateLogo1 = anime({
   loop: true
 });
 
-let AnimateLogo2 = anime({
+anime({
   targets: '.logo.two',
   translateX: path('x'),
   translateY: path('y'),
@@ -18,7 +18,7 @@ let AnimateLogo2 = anime({
   loop: true
 });
 
-let AnimateLogo3 =  anime({
+anime({
   targets: '.logo.three',
   translateX: path('x'),
   translateY: path('y'),
@@ -27,7 +27,7 @@ let AnimateLogo3 =  anime({
   loop: true
 });
 
-let AnimateLogo4 = anime({
+anime({
   targets: '.logo.four',
   translateX: path('x'),
   translateY: path('y'),
@@ -36,7 +36,7 @@ let AnimateLogo4 = anime({
   loop: true
 });
 
-let AnimateLogo5 = anime({
+anime({
   targets: '.logo.five',
   translateX: path('x'),
   translateY: path('y'),

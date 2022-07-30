@@ -1,5 +1,5 @@
 body, html {
-    background-color:rgb(245, 240, 187);
+    background-color:rgb(255, 255, 255);
     margin: 0cm;
 }
 
@@ -8,7 +8,6 @@ body, html {
     color:  white;
   }
 
-
 body hr {
 border-bottom: 0pc;
 border: solid;
@@ -16,8 +15,8 @@ max-width: 5%;
 }
 
 .topnav {
-background-color: #73a9ad;
-text-align: left;
+background-color:rgb(245, 240, 187);
+text-align: center;
 max-height: 10%;
 }
 
@@ -30,47 +29,54 @@ padding: 0;
 
 .topnav a {
 overflow: hidden;
-background-color:rgb(115, 169, 173);
+background-color:rgb(245, 240, 187);
 font-family: 'Nunito', sans-serif;
 display: inline;
 margin: 3%;
 font-size: 22px;
+font-weight: bolder;
 color: black;
 text-decoration-line: none;
 }
 
 
 .topnav button {
-    place-content: center;
+    float: right;
+    width: 0.9cm;
+    margin: 0%;
+    padding: 0px;
+    border: none;
+    background-color:rgb(245, 240, 187); 
 }
 
 .topnav a:hover {
-color: rgb(245, 240, 187);
+    font-family:'Courier New', Courier, monospace;
 }
 
 body h1 {
-font-family: 'Shadows Into Light', cursive;
-text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 body p {
-font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .About {
-display: flex;
-margin: 3%;
-justify-content: center;
-place-content: center;
-align-items: center;
-text-align: center;
-height: 100vh;
+    position: absolute;
+    display: flex;
+    margin: 3%;
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
 }
 
 .About img {
-max-width: 4%;
-padding: 1px;
-margin: 4%;
+    max-width: 40%;
+    padding: 1px;
+    margin: 4%;
 }
 
 .About .socials {
@@ -78,7 +84,7 @@ margin: 4%;
 }
 
 .About span {
-    font-family: 'Shadows Into Light', cursive;
+    font-family:'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 30px;
 }
@@ -89,39 +95,21 @@ margin: 4%;
     max-width: 50%;
 }
 
-.About iframe {
-    width: 50vh;
-    height: 50vh;
-    margin: 2%;
-}
-
 svg {
     margin: 4%;
     overflow:visible;
+    background-image: linear-gradient(to right, rgb(123, 255, 109),rgb(252, 255, 235));
     border-radius: 50%;
-    background-color: rgb(144, 200, 172);
-    color: rgb(115, 169, 173);
-    border: solid 0.2cm;
-}
-
-svg:hover {
-    background-image: url(https://img.freepik.com/premium-photo/holographic-abstract-background-pastel-neon-color_40163-61.jpg?w=996);  
-    -webkit-text-fill-color: transparent;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    animation-name: fluid;
-    background-size: 100%;
-    border-color: rgb(255, 255, 255);
 }
 
 svg image {
     width: 400px;
     border-radius: 50%;
+    box-shadow: 5cm black;
 }
 
 .Portfolio {
+    position: relative;
     margin: 0%;
 }
 
@@ -136,35 +124,25 @@ font-size: 50px;
     display:block;
     margin:0 auto;
     font-weight: bold;
-    font-family: 'Archivo Black', sans-serif;  text-align: center;
-    background-image: url(https://img.freepik.com/premium-photo/holographic-abstract-background-pastel-neon-color_40163-61.jpg?w=996);  
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-      animation-timing-function: linear;
-    animation-name: fluid;
-    background-size: 100%;
+    font-family: 'Archivo Black', sans-serif;  text-align: center;}
+
+
+.dropdown {
+      display: none;
+  }
+
+#Brendan {
+    position: relative;
+    margin: 3%;
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
 }
 
-@keyframes fluid {
-    from {
-      background-position: top;
-    }
-  
-    to {
-      background-position: bottom;
-    }
-  }
-  
-  .logo img {
-    width: 30px;
-    position: fixed;
-    padding: 0px;
-    margin: 0%;
-    border: 0px;
-  }
-
-  
-  
+#Brendan img {
+    max-width: 40%;
+    padding: 1px;
+    margin: 4%;
+}
