@@ -22,26 +22,41 @@
                     <a href = "#1">About My Dad</a>
                 </div>
             <a href="#Portfolio">Portfolio</a>
-            <button type ="button" onclick="darkMode()"><img src = "https://svgshare.com/i/fpB.svg" height = "25" width="25"/></button>
-            <button type = "button" onclick="lightMode()"><img src = "https://svgshare.com/i/foK.svg" height = "25" width="25"/></button>
-                    <script>
-                       function darkMode() {
-                        var element = document.body;
-                        var content = document.getElementById("DarkModetext");
-                        element.className = "dark-mode";
-                        content.innerText = "Dark Mode is ON";}
-                        
-                        function lightMode() {
-                        var element = document.body;
-                        var content = document.getElementById("DarkModetext");
-                        element.className = "light-mode";
-                        content.innerText = "Dark Mode is OFF";}
-                  </script>
+            <div class="switch">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" onclick="switchTheme(e);" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+            <script>
+                const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+                const currentTheme = localStorage.getItem('theme');
+
+                if (currentTheme) {
+                    document.documentElement.setAttribute('data-theme', currentTheme);
+                
+                if (currentTheme === 'dark') {
+                        toggleSwitch.checked = true;
+                    }
+                }
+
+                function switchTheme(e) {
+                    if (e.target.checked) {
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                        localStorage.setItem('theme', 'dark');
+                    }
+                    else {        document.documentElement.setAttribute('data-theme', 'light');
+                        localStorage.setItem('theme', 'light');
+                    }    
+                }
+
+                toggleSwitch.addEventListener('change', switchTheme, false);
+            </script>
         </div>
     </head>
-    <button type = "button" onclick ="newContent()"> New Content </button>
+    <button type = "button" onclick = ""> New Content </button>
     <body>
-        <div class="About" id = "Nemo">             
+        <div class="About" id = "Nemo">            
                 <img src = "NemoVector.png"/>
                 <p><span style="font-size: 60px;"> Hello! My name is Nemo, aka Devcat. </span><br> I am an internet persona based on my dad's beloved cat, and (hopefully) your Web-Developer!
                 Don't worry, my dad does most of the coding. I'm just the face of the business 
@@ -72,4 +87,5 @@
         <h1> My Portfolio </h1>
         <h1> Get In Touch </h1>
     </body>
+    </script>
 </html>
